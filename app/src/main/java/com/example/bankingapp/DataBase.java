@@ -15,8 +15,9 @@ public class DataBase extends SQLiteOpenHelper {
     private String TABLE_NAME = "user_table";
     private String TABLE_NAME1 = "transfers_table";
 
+
     public DataBase(@Nullable Context context) {
-        super(context, "User.db", null, 3);
+        super(context, "User.db", null, 4);
     }
 
     @Override

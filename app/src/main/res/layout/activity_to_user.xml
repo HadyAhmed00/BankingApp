@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".ViewTransactions">
+    tools:context=".ToUser">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/highlight"
@@ -19,21 +19,21 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="View All Transactions"
+            android:gravity="center"
+            android:text="Select The user "
             android:textColor="@color/white" />
-
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/trans_Rc"
+        android:id="@+id/to_user_rc"
         android:layout_width="match_parent"
         android:layout_height="681dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        tools:listitem="@layout/transaction_itme" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:listitem="@layout/user_list_itme" />
 </androidx.constraintlayout.widget.ConstraintLayout>
