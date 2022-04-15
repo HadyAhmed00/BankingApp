@@ -1,6 +1,6 @@
 # BankingApp
 ![Banner](https://github.com/HadyAhmed00/BankingApp/blob/main/Photos/Banking%20App%20Logo%20banner.png)
-* android app for the android workshop presented by support  
+* android app for the Mobile Development task of The Sparks Foundation Internship  
 
 ## uses:
 1. Java , XTML
