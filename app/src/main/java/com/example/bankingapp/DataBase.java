@@ -17,7 +17,7 @@ public class DataBase extends SQLiteOpenHelper {
 
 
     public DataBase(@Nullable Context context) {
-        super(context, "User.db", null, 4);
+        super(context, "User.db", null, 6);
     }
 
     @Override
@@ -25,16 +25,16 @@ public class DataBase extends SQLiteOpenHelper {
         db.execSQL("create table " + TABLE_NAME +" (USER_ID INTEGER PRIMARY KEY AUTOINCREMENT  ,NAME TEXT,BALANCE DECIMAL ,PHONE_NUMBER TEXT ,EMAIL VARCHAR,USER_PIC INTEGER)");
         db.execSQL("create table " + TABLE_NAME1 +" (TRANSACTIONID INTEGER PRIMARY KEY AUTOINCREMENT,DATE TEXT,SRC_ID INTEGER ,DEST_ID INTEGER ,AMOUNT DECIMAL,STATUS INTEGER)");
         db.execSQL("insert into user_table values(1,'Hady',9472.00,'01234567489','hady@gmail.com',0)");
-        db.execSQL("insert into user_table values(2,'Mohammed',464654.00,'0154656589','mohamed22@gmail.com',1)");
-        db.execSQL("insert into user_table values(3,'Abo ElAnwar',2334.00,'0112234232','El-noor@gmail.com',2)");
-        db.execSQL("insert into user_table values(4,'Hany',32242.00,'01342342323','Hany44@gmail.com',3)");
-        db.execSQL("insert into user_table values(5,'Wassem',923219.00,'01216923219','wiza33@gmail.com',4)");
-        db.execSQL("insert into user_table values(6,'Hitham',313336.00,'01333695545','Hitham22@gmail.com',5)");
-        db.execSQL("insert into user_table values(7,'Yehia',335456.00,'0123556846','Yehia42@gmail.com',6)");
-        db.execSQL("insert into user_table values(8,'Yossif',2233211.00,'0122233211','Yoss33if@gmail.com',7)");
-        db.execSQL("insert into user_table values(9,'Shady',942372.00,'012424267489','shady@gmail.com',8)");
-        db.execSQL("insert into user_table values(10,'Hishame',23223222.00,'012322322289','Hishame@gmail.com',9)");
-        db.execSQL("insert into user_table values(11,'Ahmed',23232.00,'01232333449','ahmed@gmail.com',10)");
+        db.execSQL("insert into user_table values(2,'Emma',4654.00,'0154656589','mohamed22@gmail.com',1)");
+        db.execSQL("insert into user_table values(3,'Nore',2334.00,'0112234232','El-noor@gmail.com',2)");
+        db.execSQL("insert into user_table values(4,'Mia',3242.00,'01342342323','Hany44@gmail.com',3)");
+        db.execSQL("insert into user_table values(5,'Ava',9299.00,'01216923219','wiza33@gmail.com',4)");
+        db.execSQL("insert into user_table values(6,'Hany',3136.00,'01333695545','Hitham22@gmail.com',5)");
+        db.execSQL("insert into user_table values(7,'Aria',3356.00,'0123556846','Yehia42@gmail.com',6)");
+        db.execSQL("insert into user_table values(8,'yousef',2211.00,'0122233211','Yoss33if@gmail.com',7)");
+        db.execSQL("insert into user_table values(9,'Shady',9472.00,'012424267489','shady@gmail.com',8)");
+        db.execSQL("insert into user_table values(10,'Hishame',2322.00,'012322322289','Hishame@gmail.com',9)");
+//        db.execSQL("insert into user_table values(11,'Ahmed',2332.00,'01232333449','ahmed@gmail.com',10)");
 
     }
 
@@ -63,7 +63,7 @@ public class DataBase extends SQLiteOpenHelper {
                 User user = new User(Integer.parseInt(cursorCourses.getString(0)),
                         cursorCourses.getString(1),
                         cursorCourses.getString(3),
-                        cursorCourses.getString(4),ViewUsers.ava[Integer.parseInt(cursorCourses.getString(5))%5],
+                        cursorCourses.getString(4),ViewUsers.ava[Integer.parseInt(cursorCourses.getString(5))],
                         Float.parseFloat(cursorCourses.getString(2)) );
 
                 users.add(user);
@@ -95,7 +95,7 @@ public class DataBase extends SQLiteOpenHelper {
             User user = new User(Integer.parseInt(cursorCourses.getString(0)),
                     cursorCourses.getString(1),
                     cursorCourses.getString(3),
-                    cursorCourses.getString(4), ViewUsers.ava[Integer.parseInt(cursorCourses.getString(5)) % 5],
+                    cursorCourses.getString(4), ViewUsers.ava[Integer.parseInt(cursorCourses.getString(5))],
                     Float.parseFloat(cursorCourses.getString(2)));
             return user;
         }

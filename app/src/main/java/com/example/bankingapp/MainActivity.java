@@ -8,12 +8,19 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+    public static  boolean done = true;
     CardView  viw_users ;
     CardView viw_trans;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if (done)
+        {
+            Intent go = new Intent(MainActivity.this, SplashScreen.class);
+            startActivity(go);
+            finish();
+        }
 
         viw_users = findViewById(R.id.view_users);
         viw_trans = findViewById(R.id.view_transactions);

@@ -24,7 +24,16 @@ public class ViewUsers extends AppCompatActivity implements UsersListAdapter.OnI
             , R.drawable.ava_2
             , R.drawable.ava_3
             , R.drawable.ava_4
-            , R.drawable.ava_5};
+            , R.drawable.ava_5
+            , R.drawable.ava_6
+
+            , R.drawable.ava_7
+
+            , R.drawable.ava_8
+
+            , R.drawable.ava_9
+
+            , R.drawable.ava_10};
 
     RecyclerView userRc;
     ArrayList<User> users =new ArrayList<>();

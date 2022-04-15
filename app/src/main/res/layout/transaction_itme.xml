@@ -25,23 +25,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="vertical">
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:padding="10dp">
+                    android:padding="5dp">
 
                     <ImageView
                         android:id="@+id/src_imge"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:padding="5dp"
-                        />
+                        android:padding="5dp" />
 
                     <TextView
                         android:id="@+id/src_name"
@@ -51,28 +52,27 @@
                         android:textColor="@color/white" />
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="made transaction to "
-                    android:textColor="@color/white" />
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_baseline_sync_alt_24" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:padding="10dp">
+                    android:padding="5dp">
 
                     <ImageView
                         android:id="@+id/dst_imge"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:padding="5dp"
-                        />
+                        android:padding="5dp" />
 
                     <TextView
                         android:id="@+id/dst_name"
@@ -83,14 +83,15 @@
                         android:textColor="@color/white" />
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/stat"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Sacsess"
-                    android:textColor="@color/white" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/stat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sacsess"
+                android:textColor="@color/white" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
