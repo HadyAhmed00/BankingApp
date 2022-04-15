@@ -49,7 +49,7 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/round_shape_btn"
                 android:padding="5dp"
-                android:text="Treansfar"
+                android:text="Transfer"
                 android:textAllCaps="false" />
 
             <Button
@@ -59,7 +59,7 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/round_shape"
                 android:padding="5dp"
-                android:text="Cancle"
+                android:text="Cancel"
                 android:textAllCaps="false" />
         </LinearLayout>
     </LinearLayout>

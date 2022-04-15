@@ -70,7 +70,7 @@ public class ToUser extends AppCompatActivity implements ToUserAdapter.OnItemCli
             dataBase.insertTransferData(src_id,dst_id,getDate(),amount,1);
             dataBase.updateBalance(dst_id,dstUser.getBalace()+amount );
             dataBase.updateBalance(src_id,srcUser.getBalace()-amount);
-            Toast.makeText(this, "The Transaction done successful", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "The Transaction done successfully", Toast.LENGTH_SHORT).show();
         }
         else {
             dataBase.insertTransferData(src_id,dst_id,getDate(),amount,0);
